@@ -1,8 +1,4 @@
-function App() {
-  return (
-    <div>
-      <p>I love programming. Its my dream!!</p>
-    </div>
-  );
-}
+const App = () => {
+  return <div></div>;
+};
 export default App;
