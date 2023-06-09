@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./style.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div>
+    <p>Salam from Idris</p>
+    <img src='https://turbo.azstatic.com/uploads/full/2023%2F05%2F17%2F16%2F38%2F41%2F774a2652-e936-45d6-b554-ca532244e9c8%2F15351_c39X6BzCkfgVz_yjo9zUSg.jpg' />
+  </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
