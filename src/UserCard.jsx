@@ -1,9 +1,11 @@
-export default function UserCard (props){
-    console.log(props)
-    return (
-        <div className="usercard">
-            <img src={props.img} alt="" />
-            <p className="usercard_name">Hi, my name is {props.name}. I'm from {props.country}, {props.city} city. I'm {props.job} </p>
-        </div>
-    )
+export default function UserCard({ card }) {
+  const { name, department, country, city, img1 } = card;
+  return (
+    <div className="usecard">
+      <img className="usercard_img" src={img1} alt="" />
+      <p className="usercard_name">
+        Hi, my name is {name}. I'm from {country}, {city} city. I'm {department}{" "}
+      </p>
+    </div>
+  );
 }

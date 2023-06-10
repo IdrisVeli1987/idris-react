@@ -19,7 +19,7 @@ const Gallery = () => {
   };
   return (
     <div className="container">
-      <img src={"/images/" + images[index]} alt="" className="cardImage"/>
+      <img src={"/images/" + images[index]} alt="" className="cardImage" />
       <div className="icons">
         <button onClick={pre}>{"<"}</button>
         <button onClick={next}>{">"}</button>
