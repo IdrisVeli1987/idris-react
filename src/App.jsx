@@ -1,8 +1,8 @@
-import Counter from "./Counter";
+import Gallery from "./Gallery";
 
 const App = () => {
   return (
-    <Counter/>
+    <Gallery />
   );
 };
 export default App;
