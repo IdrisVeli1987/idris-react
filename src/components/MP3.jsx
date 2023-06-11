@@ -25,7 +25,7 @@ const Mp3 = () => {
       <div className="mp3-container">
         <div className="sound-photo">
           <img src="https://images.genius.com/3d257439b049e7f3e89beb69916c6eba.1000x1000x1.png" />
-          <p>{songs[index].slice(0, mIndex - 1)}</p>
+          <p>{songs[index].mp3}</p>
           <audio src={"/songs/" + songs[index] + ".mp3"} controls></audio>
         </div>
         <div>
