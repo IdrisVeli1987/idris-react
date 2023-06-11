@@ -1,22 +1,28 @@
 import axios from "axios";
-import { users } from "./data";
 import styles from "./style.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const url = 'https://jsonplaceholder.typicode.com/users'
+const url = "https://jsonplaceholder.typicode.com/users";
+
 const Users = () => {
-    const [] = useState([])
-    axios.get(url).then((resp)=> {
-        console.log(resp)
-    })
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios.get(url).then(({ data }) => {
+      setUsers(data);
+    });
+  }, []);
   return (
     <>
-      <h1 className={styles.user_heading}>İstifadəçi səhifəsinə xoş gəlmisiz</h1>
-      {users.map((user) => {
+      <h1 className={styles.user_heading}>
+        İstifadəçi səhifəsinə xoş gəlmisiz
+      </h1>
+      {users.map(({ id, name, email, company }) => {
         return (
-          <div className={styles.user} key={user.id}>
-            <h3 className={styles.heading}>{user.name}</h3>
-            <p className={styles.user_email}>{user.email}</p>
+          <div className={styles.user} key={id}>
+            <h3 className={styles.heading}>{name}</h3>
+            <p className={styles.user_email}>{email}</p>
+            <p className={styles.user_email}>~~{company.name}~~ </p>
           </div>
         );
       })}
