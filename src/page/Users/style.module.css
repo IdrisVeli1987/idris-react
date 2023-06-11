@@ -1,0 +1,27 @@
+.user {
+  border: 1px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+
+.user_heading{
+  text-align: center;
+  color: goldenrod;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+.heading {
+  font-style: 32px;
+  color: purple;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.user_email {
+  font-family: cursive;
+  color: red;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 25px;
+}

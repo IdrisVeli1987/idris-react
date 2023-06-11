@@ -1,5 +1,9 @@
+import Users from "./page/Users";
+
 const App = () => {
-  return <></>;
+  return <>
+    <Users />
+  </>;
 };
 
 export default App;
