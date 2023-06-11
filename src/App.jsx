@@ -1,9 +1,11 @@
-import Users from "./page/Users";
+import { Posts } from "./page/Users/Posts";
 
 const App = () => {
-  return <>
-    <Users />
-  </>;
+  return (
+    <>
+      <Posts />
+    </>
+  );
 };
 
 export default App;
