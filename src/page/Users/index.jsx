@@ -1,7 +1,14 @@
+import axios from "axios";
 import { users } from "./data";
 import styles from "./style.module.css";
+import { useState } from "react";
+
+const url = 'https://jsonplaceholder.typicode.com/users'
 const Users = () => {
-  console.log(styles);
+    const [] = useState([])
+    axios.get(url).then((resp)=> {
+        console.log(resp)
+    })
   return (
     <>
       <h1 className={styles.user_heading}>İstifadəçi səhifəsinə xoş gəlmisiz</h1>
