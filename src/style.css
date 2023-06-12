@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .usecard {
-  width: calc(25% - 15px);
+  /* width: calc(25% - 15px); */
 }
 
 .usecard .usercard_img {
@@ -31,4 +31,21 @@
   margin: 0 auto;
   padding: 50px;
   justify-content: center;
+}
+
+.window_container {
+  position: absolute;
+  inset: 0;
+  background-color: white;
+}
+
+.window_container button {
+  float: right;
+  border: 0;
+  font-size: 30px;
+  background-color: gold;
+}
+
+.window_container button:hover {
+  background-color: white;
 }
