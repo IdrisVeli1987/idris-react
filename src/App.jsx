@@ -1,10 +1,9 @@
-import { About } from "./page/About";
-import { Windows } from "./components/Windows";
+import { WebRouting } from "./routes";
+
 const App = () => {
   return (
     <>
-      {/* <About /> */}
-      <Windows />
+      <WebRouting />
     </>
   );
 };
