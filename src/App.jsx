@@ -1,9 +1,11 @@
 import { Countries } from "./page/AllCountries";
+import { CatFact } from "./page/Catfact";
 const App = () => {
   return (
     <>
       {/* <Posts /> */}
-      <Countries />
+      {/* <Countries /> */}
+      <CatFact />
     </>
   );
 };
