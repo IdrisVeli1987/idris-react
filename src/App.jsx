@@ -1,9 +1,9 @@
-import { Posts } from "./page/Users/Posts";
-
+import { Countries } from "./page/AllCountries";
 const App = () => {
   return (
     <>
-      <Posts />
+      {/* <Posts /> */}
+      <Countries />
     </>
   );
 };
