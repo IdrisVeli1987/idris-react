@@ -8,6 +8,7 @@ export const WebRouting = () => {
       <Route path="/" element={<Users />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<div>Salam contact page</div>} />
+      <Route path="*" element={<p>Not found 404!</p>}/>
     </Routes>
   );
 };
