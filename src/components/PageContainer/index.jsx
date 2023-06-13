@@ -13,6 +13,7 @@ export const PageContainer = ({ children }) => {
         <a href="/contact">Contact</a>
         <a href="/posts">Posts</a>
         <a href="/windows">Windows</a>
+        <a href="/learn-mui">LearnMUI</a>
         <p>I'm {obj.name}</p>
       </nav>
 
