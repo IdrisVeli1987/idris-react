@@ -2,8 +2,7 @@ import { useContext } from "react";
 import { DataContext } from "../../context/DataContext";
 
 export const PageContainer = ({ children }) => {
-
-  const obj = useContext(DataContext)
+  const obj = useContext(DataContext);
 
   return (
     <>
@@ -20,6 +19,7 @@ export const PageContainer = ({ children }) => {
       <main>{children}</main>
 
       <footer>
+        <p>I'm {obj.name}</p>
         <p>Made with ❤️</p>
       </footer>
     </>
