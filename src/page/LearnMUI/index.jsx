@@ -1,4 +1,7 @@
 import {
+  Alert,
+  AppBar,
+  Avatar,
   Box,
   Button,
   ButtonGroup,
@@ -7,13 +10,14 @@ import {
   Grid,
   IconButton,
   MenuItem,
+  Paper,
   Rating,
   Select,
   Stack,
   TextField,
   Typography,
 } from "@mui/material";
-import { Delete, HeartBroken } from "@mui/icons-material";
+import { Delete, HeartBroken, Height } from "@mui/icons-material";
 
 export const LearnMUI = () => {
   return (
@@ -73,10 +77,26 @@ export const LearnMUI = () => {
       </Stack> */}
       <Container>
         <Grid container>
-          <Grid sx={{background:"green"}}  item xs={12} md={6} lg={4}>item1</Grid>
-          <Grid sx={{background: "orange"}} item xs={12} md={6} lg={4}>item2</Grid>
+          <Grid sx={{ background: "green" }} item xs={12} md={6} lg={4}>
+            item1
+          </Grid>
+          <Grid sx={{ background: "orange" }} item xs={12} md={6} lg={4}>
+            item2
+          </Grid>
         </Grid>
       </Container>
+      <Paper elevation={3} sx={{ margin: 10, height: '200 vh' }}>
+        Medimart
+      </Paper>
+      <AppBar>
+        <nav>
+          <a href="Dərmanlar">Link</a>
+          <a href="Həblər">Link</a>
+          <a href="Siroplar">Link</a>
+          <a href="İynələr">Link</a>
+          <a href="Qiymətlər">Link</a>
+        </nav>
+      </AppBar>
     </>
   );
 };
